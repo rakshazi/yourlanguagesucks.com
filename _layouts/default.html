@@ -1,0 +1,51 @@
+---
+layout: compress
+---
+{%- capture page_url -%}
+{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' | replace:'.html','' }}
+{%- endcapture -%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <head prefix="og: http://ogp.me/ns# {% if page.layout =='language' %}article: http://ogp.me/ns/article#{% endif %}">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+            <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+            <meta property="og:type" content="{% if page.layout == 'language' %}article{% else %}website{% endif %}" />
+            <meta property="og:url" content="{{ page_url }}" />
+            {% if site.logo.url %}
+            <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.logo.url }}" />
+            <meta property="og:image:type" content="{{ site.logo.type }}" />
+            {% endif %}
+            <meta property="og:locale" content="en" />
+            <meta property="og:site_name" content="{{ site.title }}" />
+            <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+            {% if page.layout == 'language' %}
+            <meta property="article:author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}" />
+            <meta property="article:section" content="{{ site.category }}" />
+            {% for tag in site.tags %}
+            <meta property="article:tag" content="{{ tag }}" />
+            {% endfor %}
+            {% for tag in page.tags %}
+            <meta property="article:tag" content="{{ tag }}" />
+            {% endfor %}
+            {% endif %}
+            <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+            <meta name="yandex-verification" content="{{ site.verification.yandex }}" />
+            <meta name="google-site-verification" content="{{ site.verification.google }}" />
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="/export/rss.xml" />
+            <link rel="canonical" href="{{ page_url }}">
+            <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}{{ site.favicon.url }}" type="{{ site.favicon.type }}">
+            <link rel="icon" href="{{ site.url }}{{ site.baseurl }}{{ site.favicon.url }}" type="{{ site.favicon.type }}">
+            <link rel="apple-touch-icon" type="{{ sitelogo.type }}" href="{{ site.url }}{{ site.baseurl }}{{ site.logo.url }}" />
+            <link rel="stylesheet" href="/assets/min.css" />
+            <link rel="stylesheet" href="/assets/style.css" />
+            {% if page.layout == 'language' %}
+            <link rel="stylesheet" href="/assets/highlight.css" />
+            {% endif %}
+        </head>
+        <body>
+            {{ content }}
+        </body>
+</html>

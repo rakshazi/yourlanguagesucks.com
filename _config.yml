@@ -1,0 +1,47 @@
+title: Your Language Sucks
+description: >-
+  Your programming language sucks. Here is why
+baseurl: ""
+url: "https://yourlanguagesucks.com"
+category: guide
+tags: ['programming languages', 'guide']
+favicon:
+  url:
+  type:
+logo:
+  url:
+  type:
+
+verification:
+  yandex:
+  google:
+
+markdown: kramdown
+sass:
+    style: compressed
+compress_html:
+  ignore:
+    envs: ['development']
+  clippings: all
+  comments: all
+  startings: all
+  endings: all
+  blanklines: false
+  profile: false
+
+keep_files:
+- CNAME
+- assets
+- favicon.ico
+
+exclude:
+- .git
+- .github
+- .gitignore
+- .gitlab-ci.yml
+- tags
+- vendor
+- Gemfile
+- Gemfile.lock
+- Makefile
+- README.md

@@ -1,0 +1,60 @@
+body {
+    background: #2a2a2e;
+    color: #ababae;
+}
+
+h1 {
+    margin: 0.2em 0;
+    border-bottom: 3px solid #5f5f63;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    font-weight: initial;
+}
+h1, h2, h3, h4, h5, b, strong, a {
+    color: #fff;
+}
+
+h1 select {
+    border: 0;
+    border-bottom: 1px dotted #fff;
+    font-size: 1em;
+    color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+h1 select option {
+    font-size: initial;
+}
+
+ul {
+    margin-block-start: .67em;
+    margin-block-end: .67em;
+    padding-inline-start: .67em;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+div.highlight pre {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #5f5f63;
+}
+code.highlighter-rouge {
+    background: #272822;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 1px solid #5f5f63;
+    color: #fff
+}
+
+.container-index{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
