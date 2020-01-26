@@ -1,7 +1,36 @@
 ---
 layout: default
 ---
+{%- capture page_url -%}{{ page.url | replace:'index.html','' | replace:'.html','' }}{%- endcapture -%}
+{%- capture page_author -%}{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}{%- endcapture -%}
+{%- capture page_date -%}{% if page.date %}{{ page.date | date: '%Y' }}{% else %}{{ site.time | date: '%Y' }}{% endif %}{%- endcapture -%}
 <div class="container">
     {% include selector.html %}
+    <div class="links">
+        <span itemprop="breadcrumb">
+            <a href="/">Your Language Sucks</a> &rarr;
+            <a href="{{ page_url }}">{{ page.title }}</a>
+        </span>
+        <a href="{{ site.repo }}{{ page.path }}" rel="nofollow" target="_blank">Edit on GitHub</a>
+    </div>
+</div>
+<div class="container" itemprop="mainEntity" itemscope itemtype="http://schema.org/Article">
     {{ content }}
+    <!-- schema.org -->
+    <div class="microdata">
+        <span itemprop="description">
+            {{ page.title }} sucks, here is why.
+            We hope, that article will help you to choose the perfect programming language for you.
+        </span>
+        <span itemprop="headline">{{ page.title }} sucks, here is why.</span>
+        <span itemprop="author">{{ page_author }}</span>
+        <span itemprop="datePublished">{{ page_date }}</span>
+        <span itemprop="dateModified">{{ page_date }}</span>
+        <span itemprop="publisher">{{ site.title }}</span>
+        <a itemprop="mainEntityOfPage" href="{{ page_url }}">{{ page.title }}</a>
+        <a itemprop="image" href="{{ site.url }}{{ site.baseurl }}{{ site.logo.url }}">{{ page.title }}</a>
+    </div>
+    <div class="links">
+        <a href="{{ site.repo }}{{ page.path }}" rel="nofollow" target="_blank">Edit on GitHub</a>
+    </div>
 </div>

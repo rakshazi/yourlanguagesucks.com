@@ -58,3 +58,14 @@ code.highlighter-rouge {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.microdata {
+    visibility: hidden;
+}
+
+.links {
+    text-align: right;
+}
+.links span {
+    float: left;
+}
