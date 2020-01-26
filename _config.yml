@@ -6,12 +6,12 @@ url: "https://yourlanguagesucks.com"
 repo: https://github.com/rakshazi/yourlanguagesucks.com/edit/master/
 category: guide
 tags: ['programming languages', 'guide']
-favicon:
-  url:
-  type:
 logo:
-  url:
-  type:
+  url: /assets/img/logo.jpg
+  type: image/jpeg
+poster: # because jpg does not work with transparency properly
+  url: /assets/img/logo.png
+  type: image/png
 
 verification:
   yandex:

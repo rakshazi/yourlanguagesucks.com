@@ -14,9 +14,9 @@ layout: compress
             <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
             <meta property="og:type" content="{% if page.layout == 'language' %}article{% else %}website{% endif %}" />
             <meta property="og:url" content="{{ page_url }}" />
-            {% if site.logo.url %}
-            <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.logo.url }}" />
-            <meta property="og:image:type" content="{{ site.logo.type }}" />
+            {% if site.poster.url %}
+            <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.poster.url }}" />
+            <meta property="og:image:type" content="{{ site.poster.type }}" />
             {% endif %}
             <meta property="og:locale" content="en" />
             <meta property="og:site_name" content="{{ site.title }}" />
@@ -36,9 +36,7 @@ layout: compress
             <meta name="google-site-verification" content="{{ site.verification.google }}" />
             <link rel="alternate" type="application/rss+xml" title="RSS" href="/export/rss.xml" />
             <link rel="canonical" href="{{ page_url }}">
-            <link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}{{ site.favicon.url }}" type="{{ site.favicon.type }}">
-            <link rel="icon" href="{{ site.url }}{{ site.baseurl }}{{ site.favicon.url }}" type="{{ site.favicon.type }}">
-            <link rel="apple-touch-icon" type="{{ sitelogo.type }}" href="{{ site.url }}{{ site.baseurl }}{{ site.logo.url }}" />
+            <link rel="apple-touch-icon" type="{{ site.poster.type }}" href="{{ site.url }}{{ site.baseurl }}{{ site.poster.url }}" />
             <link rel="stylesheet" href="/assets/min.css" />
             <link rel="stylesheet" href="/assets/style.css" />
             {% if page.layout == 'language' %}
