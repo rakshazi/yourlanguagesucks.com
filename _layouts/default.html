@@ -10,7 +10,7 @@ layout: compress
         <head prefix="og: http://ogp.me/ns# {% if page.layout =='language' %}article: http://ogp.me/ns/article#{% endif %}">
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+            <title>{% if page.title %}{{ page.title }} sucks, here is why.{% else %}{{ site.title }}{% endif %}</title>
             <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
             <meta property="og:type" content="{% if page.layout == 'language' %}article{% else %}website{% endif %}" />
             <meta property="og:url" content="{{ page_url }}" />
