@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, b, strong, a {
 }
 
 h1 img {
-    width: 1em;
+    width: 1.5em;
     vertical-align: middle;
 }
 
@@ -74,4 +74,20 @@ code.highlighter-rouge {
 }
 .links span {
     float: left;
+}
+
+@media screen and (max-width: 1310px) {
+    .container-index {
+        margin-top: 10%;
+        position: initial;
+        transform: none;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    h1 img {
+        display: none;
+    }
 }
