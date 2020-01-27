@@ -13,10 +13,6 @@ poster: # because jpg does not work with transparency properly
   url: /assets/img/logo.png
   type: image/png
 
-verification:
-  yandex:
-  google:
-
 markdown: kramdown
 sass:
     style: compressed

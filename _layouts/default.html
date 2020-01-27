@@ -32,8 +32,6 @@ layout: compress
             {% endfor %}
             {% endif %}
             <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-            <meta name="yandex-verification" content="{{ site.verification.yandex }}" />
-            <meta name="google-site-verification" content="{{ site.verification.google }}" />
             <link rel="alternate" type="application/rss+xml" title="RSS" href="/export/rss.xml" />
             <link rel="canonical" href="{{ page_url }}">
             <link rel="apple-touch-icon" type="{{ site.poster.type }}" href="{{ site.url }}{{ site.baseurl }}{{ site.poster.url }}" />
