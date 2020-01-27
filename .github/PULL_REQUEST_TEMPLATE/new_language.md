@@ -1,9 +1,6 @@
 ---
 name: New language
 about: Add new language with list of "sucks"
-title: "[NEW]"
-labels: enhancement
-assignees: rakshazi
 
 ---
 
