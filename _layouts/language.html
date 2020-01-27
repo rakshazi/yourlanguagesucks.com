@@ -12,7 +12,7 @@ layout: default
             <a href="/">Your Language Sucks</a> &rarr;
             <a href="{{ page_url }}">{{ page.title }}</a>
         </span>
-        <a href="{{ site.repo }}{{ page.path }}" rel="nofollow" target="_blank">Edit on GitHub</a>
+        <a href="{{ site.repo }}edit/master/{{ page.path }}" rel="nofollow" target="_blank">Edit on GitHub</a>
     </div>
     {% if page.date and date < now %}
     <div class="msg danger">
@@ -39,6 +39,6 @@ layout: default
         <a itemprop="image" href="{{ site.url }}{{ site.baseurl }}{{ site.logo.url }}">{{ page.title }}</a>
     </div>
     <div class="links">
-        <a href="{{ site.repo }}{{ page.path }}" rel="nofollow" target="_blank">Edit on GitHub</a>
+        <a href="{{ site.repo }}edit/master/{{ page.path }}" rel="nofollow" target="_blank">Edit on GitHub</a>
     </div>
 </div>

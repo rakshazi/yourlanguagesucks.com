@@ -3,7 +3,8 @@ description: >-
   Your programming language sucks. Here is why
 baseurl: ""
 url: "https://yourlanguagesucks.com"
-repo: https://github.com/rakshazi/yourlanguagesucks.com/edit/master/
+repo: https://github.com/rakshazi/yourlanguagesucks.com/
+patreon: https://patreon.com/rakshazi
 category: guide
 tags: ['programming languages', 'guide']
 logo:
