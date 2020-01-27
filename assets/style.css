@@ -76,6 +76,22 @@ code.highlighter-rouge {
     float: left;
 }
 
+blockquote p {
+    margin: 0;
+}
+
+blockquote,
+.msg {
+    padding: 1.5em;
+    background: #272822;
+    margin: 1em 0;
+    border-left: 5px solid #5f5f63;
+}
+
+.msg.danger {
+    border-left: 5px solid #f43b4d;
+}
+
 @media screen and (max-width: 1310px) {
     .container-index {
         margin-top: 10%;

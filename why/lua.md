@@ -1,6 +1,7 @@
 ---
 title: Lua
 layout: language
+date: 2017
 ---
 * Variable declaration is global by default, and looks exactly like assignment.
 
