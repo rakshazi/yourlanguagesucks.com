@@ -2,6 +2,7 @@
 title: JavaScript
 layout: language
 date: 2017
+author: theory.org
 ---
 
 > **Note**: some of this is not JavaScript itself, but [Web API](https://developer.mozilla.org/en/docs/Web/API)

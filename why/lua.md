@@ -2,6 +2,7 @@
 title: Lua
 layout: language
 date: 2017
+author: theory.org
 ---
 * Variable declaration is global by default, and looks exactly like assignment.
 
