@@ -48,7 +48,7 @@ div.highlight pre {
     padding: 10px 20px;
     border-radius: 5px;
     border: 1px solid #5f5f63;
-    overflow-y: scroll;
+    overflow-x: auto;
 }
 code.highlighter-rouge {
     background: #272822;
