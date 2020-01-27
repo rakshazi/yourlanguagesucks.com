@@ -1,4 +1,5 @@
 ---
+layout: compress
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
@@ -16,7 +17,7 @@
         <atom:link href="{{ site.url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
         <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
         {% for post in site.posts %}
-        <item>
+        <item turbo="true">
             <title><![CDATA[{{ post.title | strip_html | remove:"&nbsp;" }}]]></title>
             {% if post.author %}
             <dc:creator>{{ post.author | xml_escape }}</dc:creator>
@@ -33,7 +34,7 @@
         {% endfor %}
         {% for page in site.pages %}
         {% if page.title %}
-        <item>
+        <item turbo="true">
             <title><![CDATA[{{ page.title | strip_html | remove:"&nbsp;" }}]]></title>
             {% if page.author %}
             <dc:creator>{{ page.author | xml_escape }}</dc:creator>
