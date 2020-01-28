@@ -12,13 +12,13 @@ layout: default
             <a href="/">Your Language Sucks</a> &rarr;
             <a href="{{ page_url }}">{{ page.title }}</a>
         </span>
-        <a href="{{ site.repo }}edit/master/{{ page.path }}" rel="nofollow" target="_blank">Edit on GitHub</a>
+        <a id="edit-top" href="{{ site.repo }}edit/master/{{ page.path }}" rel="nofollow" target="_blank">Edit on GitHub</a>
     </div>
     {% if page.date and date < now %}
     <div class="msg danger">
         <strong>Watch Out!</strong>
         That article was updated in {{ date }}, some information may be outdated.
-        Feel free to update it yourself with "Edit on GitHub" link
+        Feel free to update it yourself with <a href="#edit-top">Edit on GitHub</a> link
     </div>
     {% endif %}
 </div>
@@ -39,6 +39,6 @@ layout: default
         <a itemprop="image" href="{{ site.url }}{{ site.baseurl }}{{ site.logo.url }}">{{ page.title }}</a>
     </div>
     <div class="links">
-        <a href="{{ site.repo }}edit/master/{{ page.path }}" rel="nofollow" target="_blank">Edit on GitHub</a>
+        <a id="edit-bottom" href="{{ site.repo }}edit/master/{{ page.path }}" rel="nofollow" target="_blank">Edit on GitHub</a>
     </div>
 </div>
