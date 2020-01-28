@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: page
 title: Add new language that
 ---
-<div class="container" markdown="1">
 {% include beta.html %}
 
 [{{ site.title }}](/) &rarr; [add new page](/new#how-to-add-new-language-page) or [update existing page](/new#how-to-update-existing-page)
@@ -67,5 +66,3 @@ aaaand create a Pull Request. Your submission will be reviewed and merged to web
 * Click on **Edit on GitHub** link on top right or bottom right corners
 * Make changes...
 * aaaand  create a Pull Request. Your submission will be reviewed and merged to website ASAP.
-
-</div>
