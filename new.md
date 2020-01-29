@@ -4,7 +4,20 @@ title: Add new language that
 ---
 {% include beta.html %}
 
-[{{ site.title }}](/) &rarr; [add new page](/new#how-to-add-new-language-page) or [update existing page](/new#how-to-update-existing-page)
+[{{ site.title }}](/) &rarr; read [what good page must contain](/new#what-good-page-must-contain) and then
+[add new page](/new#how-to-add-new-language-page) or [update existing page](/new#how-to-update-existing-page)
+
+# What does good page must contain
+
+Here is list of basic "chapters" of good article with title "Why `<language>` sucks".
+They are not mandatory - you may add your own or replace existing items, but we encourage you to cover all aspects
+of language at least with following parts:
+
+1. Syntax - if language's syntax is fucked.
+2. Types - if language's type system is fucked.
+3. Missing features - if language miss any mandatory features.
+4. Toolchain - if tooling around language is fucked.
+5. Community - if language's maintainers/contributors are ignore community, rejects proposals or community do something weird.
 
 # How to add new language page
 
@@ -33,13 +46,37 @@ author: theory.org
 * Fill reasons why `<language>` sucks in list format:
 
 ```markdown
+# Syntax
+
 * Reason 1
 * Reason 2
-* Reason 3
+* ...
 
-echo("code listings with examples are good idea!\n);
+echo("code listings with examples are good idea!\n");
 
-...
+# Types
+
+* Reason 1
+* Reason 2
+* ...
+
+# Missing features
+
+* Feature 1
+* Feature 2
+* ...
+
+# Toolchain
+
+* Reason 1
+* Reason 2
+* ...
+
+# Community
+
+* Reason 1
+* Reason 2
+* ...
 ```
 
 Example ([result on website](/why/php)):

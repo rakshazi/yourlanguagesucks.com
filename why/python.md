@@ -1,7 +1,8 @@
 ---
 title: Python
 layout: language
-date: 2017
+date: 2020
+draft: true
 author: theory.org
 ---
 * mandatory self argument in methods, although that means you can use methods and functions interchangeably.

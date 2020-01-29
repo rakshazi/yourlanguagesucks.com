@@ -21,6 +21,14 @@ layout: default
         Feel free to update it yourself with <a href="#edit-top">Edit on GitHub</a> link
     </div>
     {% endif %}
+
+    {% if page.draft %}
+    <div class="msg">
+        <strong>Nota Bene.</strong>
+        This page is a draft, because it covers very few aspects of {{ page.title }}.
+        Feel free to add information yourself with <a href="#edit-top">Edit on GitHub</a> link
+    </div>
+    {% endif %}
 </div>
 <div class="container" itemprop="mainEntity" itemscope itemtype="http://schema.org/Article">
     {{ content }}

@@ -1,7 +1,8 @@
 ---
 title: JavaScript
 layout: language
-date: 2017
+date: 2020
+draft: true
 author: theory.org
 ---
 
