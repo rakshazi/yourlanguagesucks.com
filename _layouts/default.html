@@ -2,7 +2,7 @@
 layout: compress
 ---
 {%- capture page_url -%}
-{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' | replace:'.html','' }}
+{{ site.url }}{{ page.url | replace:'index.html','' | replace:'.html','' }}
 {%- endcapture -%}
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +15,7 @@ layout: compress
             <meta property="og:type" content="{% if page.layout == 'language' %}article{% else %}website{% endif %}" />
             <meta property="og:url" content="{{ page_url }}" />
             {% if site.poster.url %}
-            <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.poster.url }}" />
+            <meta property="og:image" content="{{ site.url }}{{ site.poster.url }}" />
             <meta property="og:image:type" content="{{ site.poster.type }}" />
             {% endif %}
             <meta property="og:locale" content="en" />
@@ -34,8 +34,7 @@ layout: compress
             <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
             <link rel="alternate" type="application/rss+xml" title="RSS" href="/export/rss.xml" />
             <link rel="canonical" href="{{ page_url }}">
-            <link rel="apple-touch-icon" type="{{ site.poster.type }}" href="{{ site.url }}{{ site.baseurl }}{{ site.poster.url }}" />
-            <link rel="stylesheet" href="/assets/min.css" />
+            <link rel="apple-touch-icon" type="{{ site.poster.type }}" href="{{ site.url }}{{ site.poster.url }}" />
             <link rel="stylesheet" href="/assets/style.css" />
             {% if page.layout == 'language' %}
             <link rel="stylesheet" href="/assets/highlight.css" />

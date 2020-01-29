@@ -32,8 +32,8 @@ layout: compress
             <turbo:content><![CDATA[{{ post.content | markdownify | remove:"&nbsp;" }}]]></turbo:content>
             {% endif %}
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-            <link>{{ site.url }}{{ site.baseurl }}{{ post.url  | replace:'index.html','' | replace:'.html','' }}</link>
-            <guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ post.url  | replace:'index.html','' | replace:'.html','' }}</guid>
+            <link>{{ site.url }}{{ post.url  | replace:'index.html','' | replace:'.html','' }}</link>
+            <guid isPermaLink="true">{{ site.url }}{{ post.url  | replace:'index.html','' | replace:'.html','' }}</guid>
         </item>
         {% endfor %}
         {% for page in site.pages %}
@@ -46,8 +46,8 @@ layout: compress
             <description><![CDATA[{{ page.content |  markdownify | remove:"&nbsp;" }}]]></description>
             <turbo:content><![CDATA[{{ page.content |  markdownify | remove:"&nbsp;" }}]]></turbo:content>
             <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-            <link>{{ site.url }}{{ site.baseurl }}{{ page.url  | replace:'index.html','' | replace:'.html','' }}</link>
-            <guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' | replace:'.html','' }}</guid>
+            <link>{{ site.url }}{{ page.url  | replace:'index.html','' | replace:'.html','' }}</link>
+            <guid isPermaLink="true">{{ site.url }}{{ page.url | replace:'index.html','' | replace:'.html','' }}</guid>
         </item>
         {% endif %}
         {% endfor %}
