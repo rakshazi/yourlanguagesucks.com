@@ -4,6 +4,12 @@ layout: language
 date: 2020
 draft: true
 author: theory.org
+missing:
+- correct page structure
+- perfomance section (node.js)
+- toolchain (node.js, npm, webpack, pm2, etc.)
+- references to related benchmarks, libraries, RFCs, etc.
+- community section
 ---
 
 > **Note**: some of this is not JavaScript itself, but [Web API](https://developer.mozilla.org/en/docs/Web/API)

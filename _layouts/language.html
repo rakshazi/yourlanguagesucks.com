@@ -17,16 +17,20 @@ layout: default
     {% if page.date and date < now %}
     <div class="msg danger">
         <strong>Watch Out!</strong>
-        That article was updated in {{ date }}, some information may be outdated.
-        Feel free to update it yourself with <a href="#edit-top">Edit on GitHub</a> link
+        <p>That article was updated in {{ date }} by {{ page.author }},
+        it does not follow <a href="/new#what-does-good-page-must-contain" target="_blank">good pages</a> guide and may have outdated information.</p>
+        Help us to maintain it with <a href="#edit-top">Edit on GitHub</a> link
     </div>
     {% endif %}
 
     {% if page.draft %}
     <div class="msg">
         <strong>Nota Bene.</strong>
-        This page is a draft, because it covers very few aspects of {{ page.title }}.
-        Feel free to add information yourself with <a href="#edit-top">Edit on GitHub</a> link
+        <p>This page is a draft, because it covers very few aspects of {{ page.title }}.</p>
+        {% if page.missing %}
+        <a href="/new#what-does-good-page-must-contain" target="_blank">Currently missing parts</a>: {{ page.missing | join: ', ' }}.
+        {% endif %}
+        Feel free to add information yourself with <a href="#edit-top">Edit on GitHub</a> link.
     </div>
     {% endif %}
 </div>
@@ -44,7 +48,7 @@ layout: default
         <span itemprop="dateModified">{{ date }}</span>
         <span itemprop="publisher">{{ site.title }}</span>
         <a itemprop="mainEntityOfPage" href="{{ page_url }}">{{ page.title }}</a>
-        <a itemprop="image" href="{{ site.url }}{{ site.baseurl }}{{ site.logo.url }}">{{ page.title }}</a>
+        <a itemprop="image" href="{{ site.url }}{{ site.logo.url }}">{{ page.title }}</a>
     </div>
     <div class="links">
         <a id="edit-bottom" href="{{ site.repo }}edit/master/{{ page.path }}" rel="nofollow" target="_blank">Edit on GitHub</a>

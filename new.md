@@ -16,8 +16,12 @@ of language at least with following parts:
 1. Syntax - if language's syntax is fucked.
 2. Types - if language's type system is fucked.
 3. Missing features - if language miss any mandatory features.
-4. Toolchain - if tooling around language is fucked.
-5. Community - if language's maintainers/contributors are ignore community, rejects proposals or community do something weird.
+4. Perfomance - especially for scripting languages is the most problematic part.
+5. Toolchain - if tooling around language is fucked.
+6. Community - if language's maintainers/contributors are ignore community, rejects proposals or community do something weird.
+
+But strict "1. Reason, 2. Reason, 3. Reason" without any explanation, code examples, links to benchmarks or other related resources
+is not very usable, especially for newcomers. So, try to add som good references (for you website/blog/git too, if it's good for topic).
 
 # How to add new language page
 
@@ -43,39 +47,39 @@ author: theory.org
 ---
 ```
 
-* Fill reasons why `<language>` sucks in list format:
+* Fill reasons with descriptions and examples "why `<language>` sucks" in list format:
 
 ```markdown
 # Syntax
 
-* Reason 1
-* Reason 2
+* Reason 1 - description `some code example`
+* Reason 2 - yet again, description and `some code example`
 * ...
 
 echo("code listings with examples are good idea!\n");
 
 # Types
 
-* Reason 1
-* Reason 2
+* Reason 1 - description `some code example`
+* Reason 2 - yet again, description and `some code example`
 * ...
 
 # Missing features
 
-* Feature 1
-* Feature 2
+* Feature 1 - description
+* Feature 2 - description
 * ...
 
 # Toolchain
 
-* Reason 1
-* Reason 2
+* Reason 1 - description `some code example`
+* Reason 2 - yet again, description and `some code example`
 * ...
 
 # Community
 
-* Reason 1
-* Reason 2
+* Reason 1 - description
+* Reason 2 - yet again, description
 * ...
 ```
 

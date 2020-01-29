@@ -4,6 +4,14 @@ layout: language
 date: 2020
 draft: true
 author: theory.org
+missing:
+- correct page structure
+- perfomance section
+- types section
+- missing features section
+- toolchain (php-fpm, composer, etc.)
+- references to related benchmarks, libraries, RFCs, etc.
+- community section
 ---
 
 * `'0'`, `0`, and `0.0` are false, but `'0.0'` is true

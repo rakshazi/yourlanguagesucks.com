@@ -4,6 +4,14 @@ layout: language
 date: 2020
 draft: true
 author: theory.org
+missing:
+- correct page structure
+- perfomance section
+- types section
+- missing features section
+- toolchain (django, flask, pip, pandas, etc.)
+- references to related benchmarks, libraries, PEPs, etc.
+- community section
 ---
 * mandatory self argument in methods, although that means you can use methods and functions interchangeably.
 _even so, there are cases where a.b() would not necessarily call b as a method of a;
