@@ -4,6 +4,12 @@ layout: language
 date: 2020
 draft: true
 author: theory.org
+missing:
+- correct page structure
+- perfomance section
+- types section
+- missing features section
+- references to related benchmarks, libraries, RFCs, etc.
 ---
 # Core language #
 
