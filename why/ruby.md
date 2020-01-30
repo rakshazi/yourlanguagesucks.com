@@ -6,15 +6,8 @@ author: theory.org
 ---
 * `String#downcase`? Who calls it "downcase?" It's called "lower case," and the method should be called "lowercase" or "lower".
 And `String#upcase` should have been called "uppercase" or "upper". It does not actually make Ruby suck, it's just a matter of personal taste.
-* Unicode support should have been built in from 1.0, not added after much complaining in 1.9/2.0 in 2007
-* No support for negative / positive look-behind in regular expressions in 1.8
 * Regular expressions are always in multi-line mode
 * Using `@` and `@@` to access instance and class members can be unclear at a glance.
-* There are no smart and carefully planned changes that can't break compatibility; even minor releases can break compatibility:
-[See "Compatibility issues" and "fileutils"](http://svn.ruby-lang.org/repos/ruby/tags/v1_8_7/NEWS).
-This leads to multiple recommended stable versions: [both 1.8.7 and 1.9.1 for Windows](http://www.ruby-lang.org/en/downloads/). Which one to use?
-* Experimental and (known to be) buggy features are added to the production and "stable" releases:
-[See "passing a block to a Proc"](http://svn.ruby-lang.org/repos/ruby/tags/v1_8_7/NEWS).
 * There's some minor gotchas. `nil.to_i` turns nil into 0, but 0 does not evaluate as nil. `nil.to_i.nil? #=> false`
 * `String#to_i` just ignores trailing characters, meaning: `"x".to_i == 0`
 * Aliased methods in the standard library make reading code written by others more confusing,
