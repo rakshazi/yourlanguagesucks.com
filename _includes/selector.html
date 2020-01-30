@@ -1,7 +1,7 @@
 {%- capture page_url -%}{{ page.url | replace:'index.html','' | replace:'.html','' }}{%- endcapture -%}
 <h1>
     <a href="/" title="{{ site.title }}"><img src="{{ site.logo.url }}"/></a>
-    <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+    <select id="selector" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
         <option value="{{ site.url }}">Your Language</option>
         {% for item in site.pages %}
         {% if item.layout == "language" %}

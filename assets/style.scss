@@ -130,7 +130,10 @@ blockquote,
 .msg.danger {
     border-left: 5px solid #f43b4d;
 }
-
+#selector:target {
+    background: #f43b4d;
+    transition: all 1s linear;
+}
 #edit-top:target {
     background: #f43b4d;
     text-decoration: none;

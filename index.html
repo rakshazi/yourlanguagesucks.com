@@ -4,7 +4,14 @@ layout: default
 <div class="container container-index">
     {% include selector.html %}
     <p>
-    Select your programming language from the list above and check all cons it has.<br />
+    {% for item in site.pages %}
+    {% if item.layout == "language" %}
+    <a href="{{ site.url }}{{ item.url | replace:'index.html','' | replace:'.html','' }}">{{ item.title }}</a>
+    {% endif %}
+    {% endfor %}
+    </p>
+    <p>
+    Select your programming language <a href="#selector">from the list above</a> and check all cons it has.<br />
     We hope, that site will help you to choose the perfect programming language for you.
     <span style="float:right">by <a href="https://rakshazi.me" target="_blank" rel="author">rakshazi</a></span>
     </p>
