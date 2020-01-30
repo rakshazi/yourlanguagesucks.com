@@ -50,7 +50,9 @@ layout: default
         <a itemprop="mainEntityOfPage" href="{{ page_url }}">{{ page.title }}</a>
         <a itemprop="image" href="{{ site.url }}{{ site.logo.url }}">{{ page.title }}</a>
     </div>
+    {% include donate.html %}
     <div class="links">
+        <span><a href="/LICENSE">suckless license</a></span>
         <a id="edit-bottom" href="{{ site.repo }}edit/master/{{ page.path }}" rel="nofollow" target="_blank">Edit on GitHub</a>
     </div>
 </div>

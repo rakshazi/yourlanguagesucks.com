@@ -105,7 +105,7 @@ code.highlighter-rouge {
 }
 
 .microdata {
-    visibility: hidden;
+    display: none;
 }
 
 .links {
@@ -130,10 +130,16 @@ blockquote,
 .msg.danger {
     border-left: 5px solid #f43b4d;
 }
+
+.msg.white {
+    border-left: 5px solid #fff;
+}
+
 #selector:target {
     background: #f43b4d;
     transition: all 1s linear;
 }
+
 #edit-top:target {
     background: #f43b4d;
     text-decoration: none;
