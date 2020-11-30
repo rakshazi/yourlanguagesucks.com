@@ -15,7 +15,7 @@ So for pseudo-numeric classes, like BigInteger, you have to do things like `a.ad
 `class GenSet<E> { Object[] a; E get(int i){return a[i];}}`
 * No properties.  Simple class definitions are 7 to 10 times as long as necessary.
 * No array or map literals. Array and Map are collection interfaces.
-* No var-Keyword for infering local types (like in C#). Please mind that it is antidesign example and class names should never be that long. Example:
+* Before Java 10, no `var` keyword existed for infering local types (like in C#). Please mind that it is antidesign example and class names should never be that long. Example:
 
 ```java
 // In Java
@@ -26,8 +26,8 @@ var foo = new ClassWithReallyLongNameAndTypeParameter<NamingContextExtPackage>()
 SomeTypeIHaveToLookUpFirstButIActuallyDontReallyCareAboutIt result = getTransactionResult();
 ```
 
-* It's, like, impossible to write Java without an IDE with autocompletion, code generation, import management and refactoring.
-* No pairs or triples. Returning two values from a function or placing a pair in a set warrants a new class in a new file.
+* It is impossible to write Java without an IDE with autocompletion, code generation, import management and refactoring.
+* No Tuples. Returning two values from a function or placing a pair in a set warrants a new class in a new file.
 Generic `Pair` class leads to hairy types all over the place.
 
 # Model
