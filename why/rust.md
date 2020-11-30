@@ -1,7 +1,7 @@
 ---
 title: Rust
 layout: language
-date: 2017
+date: 2020
 author: theory.org
 ---
 # Safety
