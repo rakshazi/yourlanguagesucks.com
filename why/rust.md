@@ -28,8 +28,6 @@ There are `String` and its slice equivalent `str` (“native” Rust UTF-8 strin
 It dynamically links your program to libc (unless you target [musl](https://www.musl-libc.org/), an alternative libc),
 so your executables aren't really self-contained.
 * Modifying a file in your project or updating a dependency requires you to recompile everything that depends on it.
-* Every executable, by default, contains a copy of jemalloc,
-making “hello world” [approximately 650 kilobytes in size](https://lifthrasiir.github.io/rustlog/why-is-a-rust-executable-large.html).
 * Type-ahead auto-completion is still a work in progress, because rustc is slow.
 * IDE support is lacking.
 * Generic types are very popular, and they're essentially copy-and-pasted for every concrete type they're used with.
