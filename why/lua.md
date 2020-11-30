@@ -30,7 +30,7 @@ a = 5 -- error, new global added
 print(b) -- error, empty global read
 ```
 
-* `break`, `do while` (`while something do` and  `repeat something until something`), and `goto` exist, but not `continue`. Bizzare.
+* `while condition do` (`do something while condition` and  `repeat something until condition`), `break` and `goto` exist, but not `continue`. Bizzare.
 * Statements are distinct from expressions, and expressions cannot exist outside of statements:
 
 ```lua
