@@ -1,7 +1,7 @@
 ---
 title: Lua
 layout: language
-date: 2017
+date: 2020
 authors: theory.org and big-lip-bob
 ---
 
