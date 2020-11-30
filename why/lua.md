@@ -51,12 +51,11 @@ print("foo", fn(), "qux") -- foo bar qux
 * You can hold only one vararg at a time (in `...`) 
 * You can't mutate varargs directly.
 * Logical operators `and` | `or` cut off varargs, this is especially annoying when working with recursive functions (Lua has TCO).
-* You can't easely store varargs for later. You can create closures or pack varargs into tables to do these things,
+* You can't easely store varargs for later. There is a way to pack varargs into tables,
 but then you have to worry about escaping the nil values, which are valid in varargs but signal the end of tables, like `\0` in C strings.
 
 ```lua
-local as_closure = function(...) return ... end -- function variant -- expensive ?
-local as_table   = {n = select('#',...),...} -- table variant -- n field to indicate the last vararg index
+local packed = {n = select('#',...),...} -- n field to indicate the last vararg index
 ```
 
 * Table indexes start at one in array literals, and in the standard library.
@@ -79,5 +78,5 @@ assigned a metatable and string values called with methods. The same is not true
 
 # Toolchain
 
-* Lua doesn't have an offical toolchain as its an embedable language
+* Lua doesn't have an offical toolchain as its an embedable language.
 * LuaRocks exists but is too hard to setup, especially on Windows
