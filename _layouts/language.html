@@ -14,14 +14,7 @@ layout: default
         </span>
         <a id="edit-top" href="{{ site.repo }}edit/master/{{ page.path }}" rel="nofollow" target="_blank">Edit on GitHub</a>
     </div>
-    {% if page.date and date < now %}
-    <div class="msg danger">
-        <strong>Watch Out!</strong>
-        <p>That article was updated in {{ date }} by {{ page.author }},
-        it does not follow <a href="/new#what-does-good-page-must-contain" target="_blank">good pages</a> guide and may have outdated information.</p>
-        Help us to maintain it with <a href="#edit-top">Edit on GitHub</a> link
-    </div>
-    {% endif %}
+    {% include donate.html %}
 
     {% if page.draft %}
     <div class="msg">
@@ -33,7 +26,6 @@ layout: default
         Feel free to add information yourself with <a href="#edit-top">Edit on GitHub</a> link.
     </div>
     {% endif %}
-    {% include donate.html %}
 </div>
 <div class="container" itemprop="mainEntity" itemscope itemtype="http://schema.org/Article">
     {{ content }}
@@ -51,7 +43,6 @@ layout: default
         <a itemprop="mainEntityOfPage" href="{{ page_url }}">{{ page.title }}</a>
         <a itemprop="image" href="{{ site.url }}{{ site.logo.url }}">{{ page.title }}</a>
     </div>
-    {% include donate.html %}
     <div class="links">
         <span><a href="/LICENSE">suckless license</a></span>
         <a id="edit-bottom" href="{{ site.repo }}edit/master/{{ page.path }}" rel="nofollow" target="_blank">Edit on GitHub</a>

@@ -4,9 +4,7 @@ description: >-
 baseurl: ""
 url: "https://yourlanguagesucks.com"
 repo: https://github.com/rakshazi/yourlanguagesucks.com/
-patreon: https://patreon.com/rakshazi
-liberapay: https://liberapay.com/rakshazi
-paypal: https://paypal.me/rakshazi
+patreon: https://patreon.com/yourlanguagesucks
 category: guide
 tags: ['programming languages', 'guide']
 logo:
